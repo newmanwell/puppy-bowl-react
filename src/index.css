@@ -74,11 +74,13 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  align-items: center;
+  width: 35%;
 }
 
 input {
   margin: 2px;
+  width: 100%;
 }
 
 button {
