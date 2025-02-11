@@ -11,7 +11,6 @@ const PupDetails = () => {
       const response = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2501-FTB-ET-WEB-FT/players/${id}`);
       const detailObject = await response.json();
       const pupDetail = detailObject.data.player;
-      console.log(pupDetail)
       setOnePuppy(pupDetail);
       } catch(error) {
         console.log(error);
