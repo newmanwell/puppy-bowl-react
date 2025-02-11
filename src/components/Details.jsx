@@ -6,7 +6,7 @@ const PupDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const getPuppyDetails = async() =>{
+    const getPuppyDetails = async() => {
       try {
       const response = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2501-FTB-ET-WEB-FT/players/${id}`);
       const detailObject = await response.json();
@@ -27,9 +27,9 @@ const PupDetails = () => {
             <section className="pup-detail">
               <h2 className="card-title">Player Card</h2>
               <h2>Name: { onePuppy.name }</h2>
-              <h2>Breed: {onePuppy.breed}</h2>
-              <h2>Team: {onePuppy.team.name}</h2>
-              <img src={onePuppy.imageUrl} alt="Puppy Image"/>
+              <h2>Breed: { onePuppy.breed }</h2>
+              <h2>Team: { onePuppy.team.name }</h2>
+              <img src={ onePuppy.imageUrl } alt="Puppy Image"/>
             </section>
         </section>
         :
