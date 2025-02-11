@@ -1,3 +1,39 @@
 body {
   background-color: cornflowerblue;
+  margin: 0px;
 }
+
+header {
+  margin-bottom: 40px;
+  border-bottom: 2px solid lightgrey;
+  background-color: rgb(56, 83, 132);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.pup-container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 70px;
+}
+
