@@ -20,20 +20,45 @@ img {
   width: 300px;
 }
 
-.pup-container {
+a {
   display: flex;
   justify-content: center;
+  margin: 40px;
 }
 
 h1 {
   text-align: center;
   margin-top: 0px;
   padding-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
+
+.player-card {
+  display: flex;
+  justify-content: center;
+}
+
+.pup-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid lightgoldenrodyellow;
+  background-color: rgb(78, 121, 203);
+  padding: 25px;
+}
+
+.card-title {
+  color: rebeccapurple;
+  font-size: 30px;
+  border-bottom: 2px dotted lightgoldenrodyellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 
