@@ -77,5 +77,14 @@ form {
   width: 25%;
 }
 
+input {
+  margin: 2px;
+}
+
+button {
+  margin-top: 1px;
+  width: 50%;
+}
+
 
 
