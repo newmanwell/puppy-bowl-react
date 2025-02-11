@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"
 
 const Home = () => {
   const [ allPuppies, setAllPuppies ] = useState([]);
@@ -16,17 +17,16 @@ const Home = () => {
     }
     getPuppies();
   }, []);
-  console.log(allPuppies);
 
   return (
         allPuppies.map((onePuppy) => {
           return (
-            <section className="pup-container" key={ onePuppy.id }>
+            <Link to={`/details/${onePuppy.id}`} className="pup-container" key={ onePuppy.id }>
               <div>
                 <img src={ onePuppy.imageUrl } alt="Puppy Image"/>
                 <h2 >{ onePuppy.name }</h2>
               </div>
-            </section>
+            </Link>
           )
         })
   )

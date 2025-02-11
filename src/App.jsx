@@ -1,6 +1,7 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 
 import Home from "./components/Home";
+import PupDetails from "./components/Details";
 
 const App = () => {
  
@@ -13,12 +14,12 @@ const App = () => {
           <Link to="/">Home</Link>
         </nav>
       </header>
-      <section>
+      <div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/details" element={<h2>testing</h2> } />
+          <Route path="/" element={ <Home /> } />
+          <Route path="/details/:id" element={ <PupDetails/> } />
         </Routes>
-      </section>
+      </div>
     </>
   )
 }
