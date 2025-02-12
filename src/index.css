@@ -88,5 +88,11 @@ button {
   width: 50%;
 }
 
+.delete-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
